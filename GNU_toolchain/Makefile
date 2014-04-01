@@ -4,7 +4,9 @@
 MODULE_NAME = module_name
 build:
 	mkdir --parents Simulation
-	cd ../Source_code; iverilog -o ../GNU_toolchain/Simulation/${MODULE_NAME}_testbench.executable ${MODULE_NAME}_testbench.v
+	iverilog \
+		-o ../GNU_toolchain/Simulation/${MODULE_NAME}_testbench.executable \
+		../Source_code/${MODULE_NAME}_testbench.v
 
 simulate:
 	Simulation/${MODULE_NAME}_testbench.executable

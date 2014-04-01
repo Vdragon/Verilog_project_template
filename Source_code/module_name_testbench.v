@@ -3,7 +3,7 @@
 `timescale 1ns / 100ps
 
 //include D.U.T.模組
-//`include "module_name/module_name.v"
+//`include "../Source_code/module_name/module_name.v"
 
 //時脈產生器半週期
 //`define CLOCK_PERIOD_HALF 10
